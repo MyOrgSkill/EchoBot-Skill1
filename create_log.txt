@@ -1,0 +1,642 @@
+{
+  "error": null,
+  "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "830eb2e2-1e9a-4d6c-a056-0942abf90d00",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/serverfarms/EchoBot-Skill1-TestEnv1",
+            "resourceGroup": "EchoBot-Skill1-TestEnv1",
+            "resourceName": "EchoBot-Skill1-TestEnv1",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1",
+        "resourceName": "EchoBot-Skill1-TestEnv1",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+            "resourceGroup": "EchoBot-Skill1-TestEnv1",
+            "resourceName": "EchoBot-Skill1-TestEnv1",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.BotService/botServices/EchoBot-Skill1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1",
+        "resourceName": "EchoBot-Skill1",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appId": {
+        "type": "String",
+        "value": "2ecb84c0-9558-440f-8f3f-727c220f77ae"
+      },
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "appSecret": {
+        "type": "String",
+        "value": "skillbottest!123"
+      },
+      "appServicePlanLocation": {
+        "type": "String",
+        "value": "WestUS"
+      },
+      "botId": {
+        "type": "String",
+        "value": "EchoBot-Skill1"
+      },
+      "botSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "existingAppServicePlan": {
+        "type": "String",
+        "value": ""
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringKey": {
+        "type": "String",
+        "value": ""
+      },
+      "luisServiceAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1-luis"
+      },
+      "luisServiceRunTimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "name": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "newAppServicePlanName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "newAppServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        }
+      },
+      "newWebAppName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "shouldCreateAuthoringResource": {
+        "type": "Bool",
+        "value": true
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "1828911997243188658",
+    "templateLink": null,
+    "timestamp": "2020-05-12T12:19:07.687120+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/serverfarms/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.DocumentDB/databaseAccounts/echobot-skill1-testenv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.BotService/botServices/EchoBot-Skill1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Insights/components/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Storage/storageAccounts/echobotskill1testenv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.CognitiveServices/accounts/EchoBot-Skill1-TestEnv1-luis-Authoring",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.CognitiveServices/accounts/EchoBot-Skill1-TestEnv1-luis",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      }
+    ]
+  },
+  "resourceGroup": "EchoBot-Skill1-TestEnv1",
+  "type": "Microsoft.Resources/deployments"
+}
+This command is implicitly deprecated because command group 'group deployment' is deprecated and will be removed in a future release. Use 'deployment group' instead.
+{
+  "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Resources/deployments/05122020174856",
+  "location": null,
+  "name": "05122020174856",
+  "properties": {
+    "correlationId": "2cf240b5-e274-4efd-9ca5-f9cf3172d104",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/serverfarms/EchoBot-Skill1-TestEnv1",
+            "resourceGroup": "EchoBot-Skill1-TestEnv1",
+            "resourceName": "EchoBot-Skill1-TestEnv1",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1",
+        "resourceName": "EchoBot-Skill1-TestEnv1",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+            "resourceGroup": "EchoBot-Skill1-TestEnv1",
+            "resourceName": "EchoBot-Skill1-TestEnv1",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.BotService/botServices/EchoBot-Skill1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1",
+        "resourceName": "EchoBot-Skill1",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT11M27.472801S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.BotService/botServices/EchoBot-Skill1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.CognitiveServices/accounts/EchoBot-Skill1-TestEnv1-luis",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.CognitiveServices/accounts/EchoBot-Skill1-TestEnv1-luis-Authoring",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.DocumentDB/databaseAccounts/echobot-skill1-testenv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Insights/components/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Storage/storageAccounts/echobotskill1testenv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/serverfarms/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      },
+      {
+        "id": "/subscriptions/0d8a444a-ec63-46c0-a71c-9dca308d7141/resourceGroups/EchoBot-Skill1-TestEnv1/providers/Microsoft.Web/sites/EchoBot-Skill1-TestEnv1",
+        "resourceGroup": "EchoBot-Skill1-TestEnv1"
+      }
+    ],
+    "outputs": {
+      "applicationInsights": {
+        "type": "Object",
+        "value": {
+          "InstrumentationKey": "ff21b916-a13b-4f50-893b-104b82542a2f"
+        }
+      },
+      "blobStorage": {
+        "type": "Object",
+        "value": {
+          "connectionString": "DefaultEndpointsProtocol=https;AccountName=echobotskill1testenv1;AccountKey=67edd3jU4mIkAP+rNwBdefeqHSSfO+EgmfnFKohq1KLkTqJWKxtG3hkICZOCNiEZ0YEiOUqv18iwrQUjpp2TUg==;EndpointSuffix=core.windows.net",
+          "container": "transcripts"
+        }
+      },
+      "cosmosDb": {
+        "type": "Object",
+        "value": {
+          "authKey": "s1lokLl3GChMB8s5C0ssvvHBfDg2vPtw14e2o7cVYL9EjzElM5XT4oHOL5oMdwSete3dK2IEYMtYSDI7XQni8g==",
+          "collectionId": "botstate-collection",
+          "cosmosDBEndpoint": "https://echobot-skill1-testenv1.documents.azure.com:443/",
+          "databaseId": "botstate-db"
+        }
+      },
+      "luis": {
+        "type": "Object",
+        "value": {
+          "authoringKey": "e760e254f8764321b8695d35ca7dd696",
+          "endpointKey": "e03bee9fab1e4c86af294ef1be26d703",
+          "region": "westus"
+        }
+      }
+    },
+    "parameters": {
+      "appId": {
+        "type": "String",
+        "value": "2ecb84c0-9558-440f-8f3f-727c220f77ae"
+      },
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "appSecret": {
+        "type": "String",
+        "value": "skillbottest!123"
+      },
+      "appServicePlanLocation": {
+        "type": "String",
+        "value": "WestUS"
+      },
+      "botId": {
+        "type": "String",
+        "value": "EchoBot-Skill1"
+      },
+      "botSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "existingAppServicePlan": {
+        "type": "String",
+        "value": ""
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringKey": {
+        "type": "String",
+        "value": ""
+      },
+      "luisServiceAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1-luis"
+      },
+      "luisServiceRunTimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "name": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "newAppServicePlanName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "newAppServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        }
+      },
+      "newWebAppName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "shouldCreateAuthoringResource": {
+        "type": "Bool",
+        "value": true
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "EchoBot-Skill1-TestEnv1"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "1828911997243188658",
+    "templateLink": null,
+    "timestamp": "2020-05-12T12:30:44.555788+00:00"
+  },
+  "resourceGroup": "EchoBot-Skill1-TestEnv1",
+  "type": "Microsoft.Resources/deployments"
+}
